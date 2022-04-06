@@ -14,26 +14,10 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-
-const swiper1 = new Swiper('.swiper1', {
-    // Optional parameters
-    slidesPerView: 5,
-    spaceBetween: -60,
-    loop: true,
-    observer: true,
-    observeParents: true,
-    observeSlideChieldren: true,
-    // Navigation arrows
-    navigation: {
-        nextEl: '.button-next',
-        prevEl: '.button-prev',
-    },
-});
-
 const mySwiper = new Swiper('.swiper2', {
     // Optional parameters
     slidesPerView: 4,
-    spaceBetween: 10,
+    spaceBetween: -45,
     loop: true,
     observer: true,
     observeParents: true,
