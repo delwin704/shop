@@ -485,7 +485,7 @@ top: 25%;
        display: flex;
        flex-direction: column;
        align-items: center;
-        min-width: 0;
+
     }
     &__head{
         margin-bottom: 32px;
@@ -691,6 +691,176 @@ top: 25%;
     justify-content: center;
 }
 //-------------Section4-gerat----------------
+//-------------Section5-benefit----------------
+.benefit{
+    margin: 80px 0;
+    &__container{
+    
+    }
+    &__img{
+        
+       
+        object-fit: contain;
+
+        &-wrapper{
+                width: 956px;
+                margin: 0 auto -37px;
+        }
+    }
+    &__main{
+        background-color: rgba(205, 168, 97, 0.19);
+        border-radius: 30px;
+        height: 309px;
+        display: flex;
+        align-items: center;
+        color: #000;
+        &-wrapper{
+            display: flex;
+            margin: 121px 324px;
+            width: 1032px;
+            height: 70px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-item{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 94px 140px;
+            grid-template-rows: 33px 33px;
+            grid-column-gap: 20px;
+        }
+        &-img{
+            width: 94px;
+            height: 67px;
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        &-head{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+        }
+        &-text{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+        }
+    }
+}
+//-------------Section5-benefit----------------
+//-------------Section6-blog----------------
+.blog{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__head{
+margin-bottom: 32px;
+    }
+    &__text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    &__main{
+
+    }
+    &__item{
+        width: 585px;
+        height: 388px;
+        border-radius: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        //border: 2px solid rgba(86, 86, 85, 0.5);
+        &:hover{
+            .blog__item-read{
+                color: rgba(255, 255, 255, 0.8);
+            }
+            .blog__item-link{
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.052) 26.56%, rgba(0, 0, 0, 0.52) 93.23%);
+            }
+        }
+    
+        &-link{
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.176) 26.56%, rgba(0, 0, 0, 0.8) 93.23%);
+            border-radius: 50px;
+        }       
+         &-wrapper{
+            position: absolute;
+            width: 50%;
+            margin-left: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            color: #fff;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            align-items: center;
+            bottom: 20px;
+        }
+        &-date{
+            flex: 0 1 50%;
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 23px;position: relative;
+            margin-bottom: 11px;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 18px;
+                height: 18px;
+                background-color: transparent;
+                background-image: url(../images/svg/calendar.svg);
+                background-repeat: no-repeat;
+                top: -2px;
+                left: 0;
+            }
+        }
+        &-comment{
+            flex: 0 1 50%;
+            font-size: 14px;
+            line-height: 16px;
+            padding-left: 23px;position: relative;
+            margin-bottom: 11px;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 18px;
+                height: 18px;
+                background-color: transparent;
+                background-image: url(../images/svg/comment.svg);
+                background-repeat: no-repeat;
+                top: -2px;
+                left: 0;
+            }
+        }
+        &-head{
+            flex: 0 1 100%;
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 5px;
+        }
+        &-read{
+            flex: 0 1 100%;
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}
+//-------------Section6-blog----------------
 //-------------Footer----------------
 .footer{
 background-color: $gold;
