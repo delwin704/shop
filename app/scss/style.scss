@@ -758,6 +758,18 @@ line-height: 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        &::before{
+            position: absolute;
+            width: 65%;
+            height: 604px;
+            content: '';
+            background-color: #F5EEE1;
+            border-radius: 0px 100px 100px 0px;
+            bottom: -60px;
+            left: 0;
+            z-index: -1;
+        }
     }
     &__head{
 margin-bottom: 32px;
@@ -771,7 +783,9 @@ margin-bottom: 32px;
         margin-bottom: 30px;
     }
     &__main{
-
+        display: grid;
+        grid-template:repeat(2,2fr)/repeat(2,2fr);
+        grid-gap: 114px;
     }
     &__item{
         width: 585px;
