@@ -3,7 +3,7 @@
 @import "fonts";
 
 //-------------Header----------------
-
+// 1920 1600 1366 1024 768 480 360
 .header {
 
     &__container{
@@ -11,7 +11,7 @@
     }
 &__main{
     position: absolute;
-    content: "";
+    padding-right: 20px;
     width: 100%;
 }
     // .header__btn
@@ -1234,9 +1234,37 @@ margin-left: 150px;
                             display: none;
                         }
                     }
+                    &:hover{
+                        &::after{
+                            scale: 2;
+                        }
+                    }
     }
 }
+&__social{
+    &-list{
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    &-img{
+        width: 40px;
+        height: 40px;
+    }
+    &-item{
+        padding: 5px;
+        &:hover{
+                .footer__social-img{
+                   scale: 1.2;
+                }
+            }
+        }
+        & +.footer__social-item{
+            margin-left: 5px;           
+        }
+    }
 }
+
 //-------------Footer----------------
 
 .great__slider{
