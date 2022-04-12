@@ -40,7 +40,7 @@
     }
 
     // .header__menu-item
-
+    
     &__menu-item {
                     font-family: "Roboto",
                     sans-serif;
@@ -366,7 +366,7 @@ top: 25%;
     }
 }
 .swiper {
-    width: 1680px;
+    width: 100%;
 }
 .button-prev{
     z-index: 10;
@@ -634,7 +634,7 @@ top: 25%;
     }
 }
 .swiper2 {
-    width: 1680px;
+    width: 100%;
 }
 .swiper-container{
     position: relative;
@@ -1269,4 +1269,9 @@ margin-left: 150px;
 
 .great__slider{
     min-width: 0;
+}
+
+
+.footer__test{
+        @include burger; 
 }

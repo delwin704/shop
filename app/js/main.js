@@ -1,3 +1,15 @@
+(function(){
+  const burger = document?.querySelector('[data-burger]');
+  const menu = document?.querySelector('[data-menu]');
+
+  burger?.addEventListener('click', (e) => {
+    burger?.classList.toggle('burger--active');
+    menu?.classList.toggle('menu--active');
+  });
+})();
+
+
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: 5,
@@ -11,6 +23,37 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.button-next',
         prevEl: '.button-prev',
     },
+    breakpoints: {
+        // 1920 1600 1366 1024 768 480 360
+        // when window width is >= 320px
+        
+        360: {
+            slidesPerView: 1,
+            spaceBetween: -60,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: -160,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: -160,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: -120,
+          },
+          1366: {
+            slidesPerView: 4,
+            spaceBetween: -100,
+          },
+          1600: {
+            slidesPerView: 5,
+            spaceBetween: -80,
+          },
+
+          
+      }
 });
 
 
